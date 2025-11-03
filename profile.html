@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль - TeleUp Chat</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-container">
+            <div class="logo">
+                <a href="chat.html" class="back-link">← Назад к чату</a>
+                <h1>🚀 TeleUp</h1>
+                <p>Профиль пользователя</p>
+            </div>
+
+            <div class="profile-section">
+                <div class="profile-avatar">
+                    <div class="avatar-large" id="profileAvatar">TU</div>
+                    <h2 id="profileUsername">Пользователь</h2>
+                    <p id="profileEmail">user@example.com</p>
+                </div>
+
+                <div class="profile-info">
+                    <div class="info-item">
+                        <label>Дата регистрации:</label>
+                        <span id="profileDate">Не указано</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <label>Статус:</label>
+                        <span style="color: #2ed573;">🟢 Online</span>
+                    </div>
+                </div>
+
+                <div class="profile-actions">
+                    <button class="btn btn-secondary btn-full" onclick="editProfile()">
+                        ✏️ Редактировать профиль
+                    </button>
+                    <button class="btn btn-secondary btn-full" onclick="changePassword()">
+                        🔐 Сменить пароль
+                    </button>
+                    <button class="btn btn-secondary btn-full" onclick="showSettings()">
+                        ⚙️ Настройки
+                    </button>
+                    <button class="btn btn-full" onclick="logout()" style="background: #ff4757; color: white;">
+                        🚪 Выйти из аккаунта
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

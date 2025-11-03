@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleUp Chat - Общение нового уровня</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-container">
+            <div class="logo">
+                <h1>🚀 TeleUp Chat</h1>
+                <p>Общение нового уровня</p>
+            </div>
+            
+            <div class="welcome-section">
+                <h2>Добро пожаловать в TeleUp!</h2>
+                <p>Безопасный и быстрый мессенджер для общения</p>
+                
+                <div class="feature-grid">
+                    <div class="feature">
+                        <span>🔒</span>
+                        <h3>Безопасность</h3>
+                        <p>Шифрование сообщений</p>
+                    </div>
+                    <div class="feature">
+                        <span>⚡</span>
+                        <h3>Скорость</h3>
+                        <p>Мгновенная доставка</p>
+                    </div>
+                    <div class="feature">
+                        <span>🌐</span>
+                        <h3>Доступность</h3>
+                        <p>Работает везде</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-buttons">
+                <a href="register.html" class="btn btn-primary">Создать аккаунт</a>
+                <a href="login.html" class="btn btn-secondary">Войти</a>
+                
+                <div class="social-auth">
+                    <p>Или войти через:</p>
+                    <button class="btn btn-github" onclick="loginWithGitHub()">
+                        <span>🐙</span> GitHub
+                    </button>
+                    <button class="btn btn-google" onclick="loginWithGoogle()">
+                        <span>📧</span> Gmail
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

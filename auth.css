@@ -1,0 +1,70 @@
+/* Additional auth-specific styles */
+.auth-container {
+    animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Password strength indicators */
+.strength-weak::after { width: 33%; background: #ff4757; }
+.strength-medium::after { width: 66%; background: #ffa502; }
+.strength-strong::after { width: 100%; background: #2ed573; }
+
+.strength-weak + .strength-text { color: #ff4757; }
+.strength-medium + .strength-text { color: #ffa502; }
+.strength-strong + .strength-text { color: #2ed573; }
+
+/* Loading states */
+.btn-loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Error states */
+.form-group.error input {
+    border-color: #ff4757;
+}
+
+.error-message {
+    color: #ff4757;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-group.error .error-message {
+    display: block;
+}
+
+/* Success states */
+.form-group.success input {
+    border-color: #2ed573;
+}
